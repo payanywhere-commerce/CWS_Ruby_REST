@@ -34,9 +34,9 @@ module Ipc
 		attr_accessor :do_log, :do_proxy
 		attr_accessor :last_call
 		
-		def send(path, body, rest_action, url='o2o-01.cert.ipcommerce.com')
+		def send(path, body, rest_action, url='api.cert.nabcommerce.com')
 		    @do_log=true
-			path = "/rest/1.0.0" + path
+			path = "/REST/2.0.18" + path
 			#@do_proxy=true;
 			if (@do_proxy)
 				url='localhost'

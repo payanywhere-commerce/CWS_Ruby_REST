@@ -14,7 +14,7 @@ require_relative 'config'
 
 p "Hello! Before you test this sample code, please crack open the code and check out what's going on."
 p "Your solutions consultant has selected a number of tests to run through to ensure this sample works."
-p "If you have questions, please contact us at solutionsconsulting@ipcommerce.com"
+p "If you have questions, please contact us at PayAnywhere Commerce, LLC"
 
 # Publisher
 
