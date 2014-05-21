@@ -2,6 +2,7 @@ require 'net/http'
 require 'time'
 require 'base64'
 require 'json'
+require 'OpenSSL'
 
 require_relative 'simple_response'
 require_relative 'constants_shared'
