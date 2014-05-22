@@ -6,7 +6,7 @@ require 'open-uri'
 module Ipc
 class SvcInfo
 
-    def self.save_application_data(ipc_cws_client, request)
+    def self.save_application_data(nab_cws_client, request)
       	defaults = {
 			"ApplicationAttended" => false,
 			"ApplicationLocation" => Ipc::ApplicationLocation::OffPremises,
@@ -23,8 +23,8 @@ class SvcInfo
 
         request = Ipc.recursive_merge(defaults, request);
 
-		ipc_cws_client.last_call = self.name + "::" + __method__.to_s;
-        ipc_cws_client.send('/svcinfo/appprofile', request, Net::HTTP::Put);
+		nab_cws_client.last_call = self.name + "::" + __method__.to_s;
+        nab_cws_client.send('/svcinfo/appprofile', request, Net::HTTP::Put);
     end
 
     def self.get_application_data(ipc_cws_client, app_id)

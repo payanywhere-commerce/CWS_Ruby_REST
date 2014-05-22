@@ -117,6 +117,6 @@ module Ipc
 end
 
 
-IpcCWSClient = Ipc::Client
-IpcCWS_endpoint_svcinfo = Ipc::SvcInfo
-IpcCWS_endpoint_txn = Ipc::Txn
+NabCWSClient = Ipc::Client
+NabCWS_endpoint_svcinfo = Ipc::SvcInfo
+NabCWS_endpoint_txn = Ipc::Txn
