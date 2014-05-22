@@ -1,6 +1,5 @@
-require_relative '../IPC/O2O_REST/client_api'
-require_relative '../IPC/STS_SOAP/client_api'
-
+require_relative '../NAB/O2O_REST/client_api'
+require_relative '../NAB/STS_SOAP/client_api'
 
 
 require_relative '../config'

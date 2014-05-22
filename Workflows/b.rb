@@ -15,7 +15,7 @@ module Workflows
 
 		# Call publish_redemption. No need for a usertoken if publishing as ready for purchase.
 
-		service_response = IpcCWS_endpoint_svcinfo::get_service_info(client)
+		service_response = NabCWS_endpoint_svcinfo::get_service_info(client)
 
 		test_assert(service_response.data["Success"]==true, "IpcCWS_endpoint_svcinfo::get_service_info")
 		pindebit_auth_template= {

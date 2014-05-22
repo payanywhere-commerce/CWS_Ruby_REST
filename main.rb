@@ -1,4 +1,4 @@
-require_relative 'IPC/client_api'
+require_relative 'NAB/client_api'
 
 require_relative 'Workflows/b'
 require_relative 'Workflows/VantivIBM'
@@ -18,7 +18,7 @@ p "If you have questions, please contact us at PayAnywhere Commerce, LLC"
 
 # Publisher
 
-client=IpcCWSClient.new
+client=NabCWSClient.new
 client.merchant_profile_id= Config::MerchantProfileId
 client.application_profile_id=Config::ApplicationProfileId
 
